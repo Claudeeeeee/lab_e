@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }
+  body,html{
+    height:100%;
+ }
+ 
+ body {
+    background-image: url('https://img.freepik.com/premium-photo/backpacker-chamonix-alps-summit-france_53876-112781.jpg?w=740');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+  }
+
+ h2 {
+    font-family: 'Rock Salt', cursive;
+  font-size: 48px;
+  color: #009688;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px 0;
+ }
+
+ h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+    color: #009688;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: rgb(68, 68, 68);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .nagłówek {
+    background-color: #0b7914;
+    color: #fff; 
+    padding: 20px; 
+    text-align: center;
+      text-transform: uppercase;
+      background-image: url(https://img.freepik.com/darmowe-wektory/piramida-krajobrazowa-wektor-minimalistyczny-styl-plakatu-retro_53876-169232.jpg?w=740&t=st=1697110010~exp=1697110610~hmac=b099873c3987efcfe879ea7110b5d85efbc47ac72d3f3ce12817e500d76f966f);
+    }
+    .nagłówek h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        margin: 0;
+    }
+    
+  #tresc-reklama {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    #nawigacja-kontener   {
+        background-image: linear-gradient(#cbedfb, #b3f2dc);
+      float: left;
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      height: 100%;
+      padding: 15px;
+      line-height: 50px;
+      text-align: center;
+      align-items: flex-start;
+
+    }
+  
+  .nawigacja :hover{
+      background-color: #444444;
+      color: #fff;
+  }
+  
+  .treść {
+    text-align: justify;
+    width: 100%;
+  }
+ 
+  
+  #treść-kontener {
+      display: flex;
+      flex-direction: column;
+      width:70%;
+      line-height: 1.5;
+  }
+
+  #sekcja1{
+    color: #0b7914;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  #sekcja2{
+    background-color: #cbedfb;
+  }
+  #sekcja3{
+    background-color: 	#b3f2dc;
+  }
+  #sekcja4{
+    background-color: #b8ebc8;
+  }
+  #sekcja5{
+    background-color: #b2e6ae;
+  }
+  #sekcja6{
+    background-color: #94e88d;
+  }
+  #sekcja7{
+    background-color: #7de86b;
+  }
+  #sekcja8{
+    background-color: #4fac37;
+  }
+  #sekcja9{
+    background-color: #2d7d1d;
+  }
+    
+  .reklama {
+      float: right;
+      width: 50%;
+        height: auto;
+        overflow:hidden;
+  }
+  
+  #reklama-kontener {
+      overflow: hidden;
+      flex-direction: column;
+      overflow:hidden;
+  }
+  .stopka {
+    background-image: url(https://img.freepik.com/darmowe-wektory/piramida-krajobrazowa-wektor-minimalistyczny-styl-plakatu-retro_53876-169232.jpg?w=740&t=st=1697110010~exp=1697110610~hmac=b099873c3987efcfe879ea7110b5d85efbc47ac72d3f3ce12817e500d76f966f);
+      color: #fff;
+      clear: both;
+      text-align: center;
+      padding: 15px;
+  }
+  
+  /* Komputer: */
+  @media only screen and (min-width: 600px) {
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    
+  /* telefon: */
+    @media screen and (max-width: 767px) {
+      #nawigacja-tresc-reklama {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+      #tresc-reklama{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          width: 100%
+      }
+      .nagłówek{
+      text-align:center;
+      }
+    .nawigacja {
+      flex: 1;
+      text-align: center;
+      width: 100%;
+      flex-direction: column;
+      }
+      #nawigacja-kontener   {
+          display: flex;
+          flex-direction: column;
+          width: 100%; /* Change width to 100% */
+          background-image: linear-gradient(#cbedfb, #b3f2dc);
+          padding: 15px;
+        }
+      .treść {
+          flex:2;
+          width: 100%;
+          padding: 0px 0px;
+      }
+      #treść-kontener {
+        width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          flex-direction: column;
+          align-items: flex-end;
+          margin: 0;
+      }
+      .reklama {
+          width: 100%;
+          height: auto;
+          overflow:hidden;
+      }
+      #reklama-kontener {
+          max-width: 100%;
+          height: 100%;
+          overflow: hidden;
+      }
+  
+  }
